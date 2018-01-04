@@ -1,0 +1,1 @@
+"use strict";define(["jquery","cookie"],function(e){e.ajax("html/include/header.html").done(function(o){e("header").html(o)}).done(function(){var o=e.cookie("loginuser");o&&(e(".loginuser").html("<a href='/PC/src/html/car.html'>"+o+"</a>"),e(".register").hide())}),e("footer").load("html/include/footer.html")});
